@@ -1,4 +1,5 @@
-# main.py
+import sys
+sys.path.append('..')
 
 from app.authentication import register, login
 
@@ -14,6 +15,7 @@ while True:
     elif choice == '2':
         login(users)
     elif choice == '3':
+        print("Exiting...")
         break
     else:
         print("Invalid choice. Please try again.")
